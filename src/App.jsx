@@ -2,6 +2,9 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import Header from './components/header'
+import AnimeCard from './components/animeCard'
+import Fav from './components/fav'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -9,8 +12,9 @@ function App() {
   return (
     <>
     <div className="container">
-      <div className="logo m-3.5 border-2 inline-block">LOGO</div>
-      <div className="searchbar w-xl h-10 border-1 mx-auto">Search</div>
+     <Header/>
+     <AnimeCard/>
+     <Fav/>
     </div>
     
     </>
