@@ -5,6 +5,7 @@ import './App.css'
 import Header from './components/header'
 import AnimeCard from './components/animeCard'
 import Fav from './components/fav'
+import Quotes from './components/Quotes'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -15,6 +16,7 @@ function App() {
      <Header/>
      <AnimeCard/>
      <Fav/>
+     <Quotes/>
     </div>
     
     </>
