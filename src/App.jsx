@@ -9,16 +9,16 @@ import Quotes from './components/Quotes'
 import OverView from './components/OverView'
 
 function App() {
-  const [count, setCount] = useState(0)
-  const [showOverview, setShow] = useState(false)
+  const [showOverview, setShowOverview] = useState(false)
 
 
   return (
     <>
     <div className="container">
      <Header/>
-     <AnimeCard />
-     <OverView/>
+     <AnimeCard onShowOverview={()=> setShowOverview(true)}/>
+      {showOverview && (<OverView onClose={() => setShowOverview(false)}/>)}
+     
      <Fav/>
      <Quotes/>
     </div>
