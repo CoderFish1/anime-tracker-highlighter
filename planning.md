@@ -1,0 +1,2 @@
+CREATED THIS MD FILE FOR PLANNING AND PROGRESS OF THIS APPLICATOIN:--
+created basic overview structure.
